@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Student Sustainability Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌱 Smart Student Sustainability Tracker</h1>
+        <p>Answer a few questions to see how sustainable your daily habits are.</p>
+
+        <form id="sustainabilityForm">
+
+            <h3>🚶 Transportation</h3>
+            <label><input type="radio" name="transport" value="walk"> Walk / Bike</label><br>
+            <label><input type="radio" name="transport" value="bus"> Public Transport</label><br>
+            <label><input type="radio" name="transport" value="car"> Car</label>
+
+            <h3>💡 Energy Habits</h3>
+            <label><input type="checkbox" id="lights"> I turn off lights when not needed</label><br>
+            <label><input type="checkbox" id="devices"> I unplug unused devices</label>
+
+            <h3>🍽️ Food Habits</h3>
+            <label><input type="checkbox" id="vegetarian"> I eat vegetarian meals often</label><br>
+            <label><input type="checkbox" id="foodWaste"> I avoid wasting food</label>
+
+            <button type="button" onclick="calculateScore()">Calculate Score</button>
+        </form>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
